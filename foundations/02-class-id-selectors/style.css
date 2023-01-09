@@ -1,0 +1,18 @@
+.oddnum{
+    background-color:#e080c0;
+    font-family: Verdana, "DejaVu sans", sans-serif;
+    
+}
+#second{
+    color:rgb(0,0,127);
+    font-size: 36px;
+
+}
+.third{
+    font-size: 24px;
+}
+#fourth{
+    background-color:hsl(120,100%,75%);
+    font-size: 24px;
+    font-weight: bold;
+}
