@@ -8,20 +8,15 @@ body{
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+.small-para {  /*moved para up*/
+  font-size: 14px;
+  font-weight: 800;
+}
+
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,13 +24,18 @@ body{
   font-size: 20px;
 }
 
-.child {
+.confirm { /*moved button up*/
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+.text.child {/*increased specificity by adding .text*/
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
 
-div.text {
+div.text{ /*has higher specificity than child*/
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
