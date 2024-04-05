@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function basics</title>
+</head>
+<body>
+    <script>
+        function add7(num=0)
+        {
+            return num+7;
+        }
+        console.log(add7(3),add7());
+        let multi1 = function (a,b) { return a*b};
+        let multi2 = (a,b) =>a*b;
+        console.log(multi1(3,5),multi2(5,8));
+        function capitalize(stri){
+            stri = stri.toLowerCase();
+            let tempstr = stri[0].toUpperCase();
+            stri = tempstr+stri.slice(1);
+            return stri;
+        }
+        console.log(capitalize("nUM123ABvas"));
+        let lastletter = (str) => str.at(-1);
+        console.log(lastletter("abcd"));
+    </script>
+</body>
+</html>
